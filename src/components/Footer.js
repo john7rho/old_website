@@ -10,10 +10,10 @@ function Footer() {
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-0" md={3} sm={12}>
-                        Garrett Love
+                        Last updated 8/11/2021
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Garrett Love.
+                        Copyright John Rho 2021.
                     </Col>
                 </Row>
             </Container>

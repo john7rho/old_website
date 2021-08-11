@@ -9,15 +9,14 @@ function AboutPage(props) {
             <Hero title={props.title} />
 
             <Content>
-            <p>Hello, my name is Garrett. I'm a full stack engineer with experience in Angular, AngularJS, Express JS, Node JS, Oracle SQL, MongoDB, and React.</p>
+            <p>Hey, I'm John. I'm currently building skills in React and Python for fun.</p>
 
-            <p>My dream is to one day start my own business and become an entrepreneur (currently working on some ideas).</p>
+            <p>I am currently a student at Harvard College (Class of 2025) considering Econ, CS, and Mind Brain Behavior.</p>
 
-            <p>I'm constantly learning new things. currently those things include gaining more experience with MongoDB, React, Express JS, and Node JS</p>
+            <p>In the past, I've worked on deep learning projects to help make more intelligent hearing aids that can address the cocktail party problem.</p>
 
-            <p>My latest project, Dev Grub, is a cookbook for developers. You can check it out <a href="https://devgrub.com" target="_blank" rel="noopener noreferrer">here</a>, or on the homepage. It is built with Angular, MongoDB, Express JS, and Node JS. However, I will be rebuilding it using React in the coming months</p>
+            <p>I've co-founded organizations like <a href="https://cashclubcorp.info" target="_blank" rel="noopener noreferrer">CASH Club Corp.</a> and <a href="https://aysi.org" target="_blank" rel="noopener noreferrer">the Association for Young Scientists and Innovators.</a>.</p>
 
-            <p>When I'm not learning something new chances are I'm creating some YouTube videos. You can find those <a href="http://www.youtube.com/c/GarrettLove1" target="_blank" rel="noopener noreferrer">here</a></p>
             </Content>
         </div>
     );

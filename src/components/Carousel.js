@@ -2,9 +2,7 @@ import React from 'react';
 
 import Card from '../components/Card';
 
-import devgrub from '../assets/images/devgrub.png';
-import youtube from '../assets/images/youtube.png';
-import evverest from '../assets/images/evverest.png';
+import listenin from '../assets/images/ISEF_Quad_Chart_AAD.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -16,27 +14,11 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Dev Grub',
-                    subTitle: 'The cookbook for developers',
-                    imgSrc: devgrub,
-                    link: 'https://devgrub.com',
-                    selected: false
-                },
-                {
-                    id: 1,
-                    title: 'Garrett Love',
-                    subTitle: 'YouTube channel',
-                    imgSrc: youtube,
-                    link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
-                    selected: false
-                },
-                {
-                    id: 2,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    imgSrc: evverest,
-                    link: 'https://github.com/garrettlove8/evverest',
-                    selected: false
+                    title: 'ListenIn',
+                    subTitle: 'AI-powered BCI hearing aid to address the cocktail party problem',
+                    imgSrc: listenin,
+                    link: 'https://www.youtube.com/watch?v=0SOuqN3godo',
+                    selected: true
                 },
             ]
         }
