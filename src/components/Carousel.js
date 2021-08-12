@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from '../components/Card';
 
-import listenin from '../assets/images/ISEF_Quad_Chart_AAD.png';
+import listenin from '../assets/images/ListenIn.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
