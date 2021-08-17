@@ -52,7 +52,7 @@ class App extends React.Component {
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
-                <Link className="nav-link" to="/resume">Resume</Link>
+                <Link className="nav-link" to="/resume" target = '_blank'>Resume</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -65,8 +65,8 @@ class App extends React.Component {
             return null;
           }}/>
           
-          <Footer />
-          <SocialFollow />
+          <Footer />    
+          <SocialFollow />     
 
 
         </Container>
