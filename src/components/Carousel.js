@@ -15,7 +15,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'ListenIn',
-                    subTitle: 'AI-powered BCI hearing aid to address the cocktail party problem',
+                    subTitle: 'AI, BCI hearing aid to address cocktail party problem',
                     imgSrc: listenin,
                     link: 'https://www.youtube.com/watch?v=0SOuqN3godo',
                     selected: true
