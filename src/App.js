@@ -24,7 +24,7 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' },
         { title: 'Resume', path: '/resume'}
       ],
-      home: {
+      home: { /* not using this*/
         title: 'Innovate to inspire',
         subTitle: 'Welcome to my website! (Work In Progress)',
         text: 'Checkout some stuff I am working on below'
@@ -52,7 +52,8 @@ class App extends React.Component {
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
-                <Link className="nav-link" to="/resume" target = '_blank'>Resume</Link>
+                <Link className="nav-link" to="/resume">Contact</Link>
+                {/*<Link className="nav-link" to="/resume" target = '_blank'>Resume</Link>*/}
               </Nav>
             </Navbar.Collapse>
           </Navbar>
