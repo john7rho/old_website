@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
-import Footer from './components/Footer';
+import Footer from './components/Footer';   
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'John Rho',
+      title: '',
       headerLinks: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
@@ -44,14 +44,14 @@ class App extends React.Component {
         <Container className="p-3" fluid={true}>
           
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>John Rho</Navbar.Brand>
+            <Navbar.Brand></Navbar.Brand> {/* should add personal logo here*/}
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+                {/*<Link className="nav-link" to="/contact">Contact</Link>*/}
                 <Link className="nav-link" to="/resume">Resume</Link>
                 {/*<Link className="nav-link" to="/resume" target = '_blank'>Resume</Link>*/}
               </Nav>
