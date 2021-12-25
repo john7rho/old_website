@@ -3,6 +3,8 @@ import React from 'react';
 import Card from '../components/Card';
 
 import listenin from '../assets/images/ListenIn.png';
+import orpheus from '../assets/images/OrpheusLogo_square.png';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -20,6 +22,14 @@ class Carousel extends React.Component {
                     link: 'https://www.youtube.com/watch?v=0SOuqN3godo',
                     selected: false
                 },
+                {
+                    id: 1,
+                    title: 'Orpheus',
+                    subTitle: 'Dynamic music stem splitter and player',
+                    imgSrc: orpheus,
+                    link: 'https://www.youtube.com/watch?v=A0xaP308D7I',
+                    selected: false
+                }
             ]
         }
     }

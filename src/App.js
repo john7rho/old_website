@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
 import SocialFollow from "./components/SocialFollow";
 
 
@@ -21,6 +22,7 @@ class App extends React.Component {
       headerLinks: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
+        { title: 'Blog', path: '/blog' },
         { title: 'Contact', path: '/contact' },
         { title: 'Resume', path: '/resume'}
       ],
@@ -51,6 +53,7 @@ class App extends React.Component {
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/blog">Blog</Link>
                 {/*<Link className="nav-link" to="/contact">Contact</Link>*/}
                 <Link className="nav-link" to="/resume">Resume</Link>
                 {/*<Link className="nav-link" to="/resume" target = '_blank'>Resume</Link>*/}
@@ -60,6 +63,7 @@ class App extends React.Component {
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/blog" render={() => <BlogPage title='My Blog' />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
           <Route path='/resume' component={() => { 
             window.location.href = 'https://docs.google.com/document/d/15hKXYGbtROTUrAzjA-PeGGlcLu7p2dNSyvm-61EaL1o/edit?usp=sharing'; 
