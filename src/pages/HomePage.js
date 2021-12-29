@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, Image } from 'react-native';
 
 import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
+import johnpic from '../assets/images/Rho-John-5.jpg';
 
 const styles = StyleSheet.create({
     baseText: {
@@ -31,6 +32,15 @@ function HomePage(props) {
     return(
         <div>
             {/*<Hero title={props.title} subTitle={props.subTitle} text={props.text} /> removed Hero component due to formatting*/}
+            
+            <Image style={{
+              resizeMode: "cover",
+              height: 300,
+              width: 300,
+              alignSelf: 'center',
+              borderRadius: 300 / 2
+            }} source={johnpic}/>
+            
             <Text style = {StyleSheet.fillerText}>
                    {'\n'}
             </Text>
