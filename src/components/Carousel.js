@@ -4,6 +4,7 @@ import Card from '../components/Card';
 
 import listenin from '../assets/images/ListenIn.png';
 import orpheus from '../assets/images/OrpheusLogo_square.png';
+import loading from '../assets/images/loading_house.jpg';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -17,7 +18,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: 'ListenIn',
-                    subTitle: 'AI, BCI hearing aid to address cocktail party problem',
+                    subTitle: 'AI hearing aid to address cocktail party problem',
                     imgSrc: listenin,
                     link: 'https://www.youtube.com/watch?v=0SOuqN3godo',
                     selected: false
@@ -28,6 +29,14 @@ class Carousel extends React.Component {
                     subTitle: 'Dynamic music stem splitter and player',
                     imgSrc: orpheus,
                     link: 'https://www.youtube.com/watch?v=A0xaP308D7I',
+                    selected: false
+                },
+                {
+                    id: 2,
+                    title: 'Computer Vision Project',
+                    subTitle: 'Coming Soon',
+                    imgSrc: loading,
+                    link: 'rhojohn.com',
                     selected: false
                 }
             ]

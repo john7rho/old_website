@@ -7,10 +7,11 @@
     "-": "0.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "axios": "^0.19.0",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.3.1",
+    "p5": "^1.4.0",
     "react": "^16.8.6",
     "react-art": "^17.0.2",
     "react-bootstrap": "^1.0.0-beta.9",
@@ -19,8 +20,14 @@
     "react-native-web": "^0.17.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-simple-typewriter": "^3.0.1",
     "react-spring": "^8.0.27",
+    "react-tsparticles": "^1.38.0",
+    "react-typing-effect": "^2.0.5",
     "save-dev": "0.0.1-security",
+    "three": "^0.136.0",
+    "typewriter-effect": "^2.18.2",
+    "vanta": "^0.5.21",
     "yarn": "^1.22.11"
   },
   "scripts": {
@@ -48,7 +55,10 @@
   },
   "proxy": "http://localhost:3030",
   "devDependencies": {
+    "autoprefixer": "^9.8.8",
     "gh-pages": "^3.2.3",
-    "sass": "^1.45.1"
+    "postcss": "^7.0.39",
+    "sass": "^1.45.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

@@ -1,9 +1,12 @@
 import React from 'react';
-import { Text, StyleSheet, Image } from 'react-native';
+import { Text, StyleSheet, Image, View } from 'react-native';
 
-import Hero from '../components/Hero';
+
 import Carousel from '../components/Carousel';
 import johnpic from '../assets/images/Rho-John-5.jpg';
+import './HomePage.css';
+import Typewriter from "typewriter-effect";
+
 
 const styles = StyleSheet.create({
     baseText: {
@@ -15,6 +18,7 @@ const styles = StyleSheet.create({
       color: 'gray',
       fontSize: 26,
       fontStyle: 'italic',
+      textAlign: 'center'
     },
     baseTextAlt: {
       fontWeight: 'bold',
@@ -27,36 +31,64 @@ const styles = StyleSheet.create({
     },
   });
 
+  
+
 function HomePage(props) {
 
     return(
+      
         <div>
             {/*<Hero title={props.title} subTitle={props.subTitle} text={props.text} /> removed Hero component due to formatting*/}
-            
-            <Image style={{
-              resizeMode: "cover",
-              height: 300,
-              width: 300,
-              alignSelf: 'center',
-              borderRadius: 300 / 2
-            }} source={johnpic}/>
-            
+
             <Text style = {StyleSheet.fillerText}>
                    {'\n'}
             </Text>
-            <Text style = {styles.baseText}>
-                 Welcome to my {/*change font*/}
-            </Text>
-            <Text style = {styles.baseTextAlt}>
-                 website {'\n'} {/*change font*/}
-            </Text>
-            <Text style = {styles.innerText}>
+
+            <View style={styles.container}>
+                <View>
+                    <Image
+                        style={{
+                        resizeMode: "cover",
+                        height: 200,
+                        width: 200,
+                        alignSelf: 'center',
+                        borderRadius: 200/2,
+                    }}
+                source={johnpic}
+                />
+                </View>
+            </View>
+
+            <div className='Type'>
+            <Typewriter
+            onInit={(typewriter)=> {typewriter
+              .typeString("Hey there!")
+              .pauseFor(1000)
+              .deleteAll()
+              .typeString("Welcome to my website.")
+              .start();
+            }}
+            />
+            </div>
+
+            <hr></hr>
+            <View style={styles.container}>
+               <Text style = {styles.innerText} class='center'>
                  Here are some things I'm exploring
-            </Text>
+               </Text>
+            </View>
+            
 
             <Carousel />
+
+            
+            
         </div>
+
+        
     );
+
+    
 
 }
 
