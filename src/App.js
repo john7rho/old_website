@@ -1,4 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import Particles from "react-tsparticles";
+
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,6 +14,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import SocialFollow from "./components/SocialFollow";
+import Typewriter from "typewriter-effect";
 
 
 class App extends React.Component {
@@ -43,11 +47,97 @@ class App extends React.Component {
   render() {
     return (
       <Router>
+        <Particles
+        id="tsparticles"
+        options={{
+          background: {
+            color: {
+              value: "transparent",
+            },
+          },
+          fpsLimit: 60,
+          interactivity: {
+            detectsOn: "canvas",
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                enable: false,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              bubble: {
+                distance: 400,
+                duration: 2,
+                opacity: 0.8,
+                size: 40,
+              },
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#aaaaaa",
+            },
+            links: {
+              color: "#111111",
+              distance: 150,
+              enable: true,
+              opacity: 0.1,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outMode: "bounce",
+              random: false,
+              speed: 0.5,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+              value: 80,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              random: true,
+              value: 5,
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          }}>
         <Container className="p-3" fluid={true}>
-          
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand></Navbar.Brand> {/* should add personal logo here*/}
-
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
@@ -68,13 +158,15 @@ class App extends React.Component {
           <Route path='/resume' component={() => { 
             window.location.href = 'https://docs.google.com/document/d/15hKXYGbtROTUrAzjA-PeGGlcLu7p2dNSyvm-61EaL1o/edit?usp=sharing'; 
             return null;
-          }}/>
-          
-          <Footer />    
-          <SocialFollow />     
-
-
+          }}/>  
         </Container>
+        
+        <Footer/>
+        <SocialFollow/>
+        </div>
+        
+        
+        
       </Router>
     );
   }

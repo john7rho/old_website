@@ -23,7 +23,7 @@ function AboutPage(props) {
         <div>
             <Hero title={props.title} />
 
-            <View style={styles.container}>
+            {/*<View style={styles.container}>
                 <View>
                     <Image
                         style={{
@@ -35,7 +35,7 @@ function AboutPage(props) {
                 source={johnpic}
                 />
                 </View>
-            </View>
+            </View>*/}
 
             <Content>
             
